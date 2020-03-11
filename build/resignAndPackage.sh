@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Name of your app.
-APP="APPLICATION NAME"
+APP="国海证券网上交易"
 # The path of your app to sign.
-APP_PATH="dist/mas/$APP_PATH.app"
+APP_PATH="dist/mas/$APP.app"
 # The path to the location you want to put the signed package.
 RESULT_PATH="dist/mas/$APP-mac_store.pkg"
 # The name of certificates you requested.
-APP_KEY="3rd Party Mac Developer Application: CERTIFICATE NAME (***********)"
-INSTALLER_KEY="3rd Party Mac Developer Installer: CERTIFICATE NAME (***********)"
+APP_KEY="3rd Party Mac Developer Application: SEALAND SECURITIES  CO.,LTD. (742TMEM5YU)"
+INSTALLER_KEY="3rd Party Mac Developer Installer: SEALAND SECURITIES  CO.,LTD. (742TMEM5YU)"
 # The path of your plist files.
 PARENT_PLIST="build/entitlements.mas.plist"
 CHILD_PLIST="build/entitlements.mas.inherit.plist"

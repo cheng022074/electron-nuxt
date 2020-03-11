@@ -1,6 +1,6 @@
 {
-  "name": "com.webspace.electron_nuxt",
-  "productName": "Electron Nuxt.js boilerplate",
+  "name": "ghzq",
+  "productName": "国海证券网上交易",
   "version": "1.1.2",
   "description": "Electron application boilerplate based on Nuxt.js for crossplatform desktop application development",
   "author": {
@@ -49,10 +49,9 @@
       "perMachine": true,
       "include": "build/installer.nsh"
     },
-    "afterSign": "build/afterSignHook.js",
     "mac": {
       "target": [
-        "dmg"
+        "mas"
       ],
       "provisioningProfile": "build/embedded.provisionprofile",
       "hardenedRuntime": true,
@@ -74,7 +73,7 @@
     "build:win:32": "nuxt build && webpack && electron-builder --win --x32",
     "build:win:both": "nuxt build && webpack && electron-builder --win --x32 --x64",
     "build:mac:dmg": "nuxt build && webpack && CSC_NAME=\"CERTIFICATE NAME (***********)\" appleId='apple@developer.id' appleIdPassword='application password' electron-builder",
-    "build:mac:store": "nuxt build && webpack && CSC_NAME=\"CERTIFICATE NAME (***********)\" electron-builder && bash build/resignAndPackage.sh"
+    "build:mac:store": "CSC_NAME=\"SEALAND SECURITIES  CO.,LTD. (742TMEM5YU)\" electron-builder && bash build/resignAndPackage.sh"
   },
   "repository": {
     "type": "git",
@@ -100,7 +99,7 @@
     "@babel/runtime-corejs2": "^7.8.0",
     "core-js": "^2.6.11",
     "cross-env": "^6.0.3",
-    "electron": "^7.1.8",
+    "electron": "5.0.13",
     "electron-builder": "^21.2.0",
     "electron-devtools-installer": "^2.2.4",
     "electron-notarize": "^0.2.1",
